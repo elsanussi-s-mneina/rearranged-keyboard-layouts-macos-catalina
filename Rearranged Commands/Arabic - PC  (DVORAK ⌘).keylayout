@@ -8,7 +8,7 @@
 
 -->
 <!--Last edited by Ukelele version 3.4.2.314 on 2020-12-19 at 15:02 (GMT-6)-->
-<keyboard group="126" id="-19075" name="Arabic - PC" maxout="2">
+<keyboard group="126" id="-19075" name="Arabic - PC  (DVORAK ⌘) (not done yet)" maxout="2">
     <layouts>
         <layout first="1" last="6" mapSet="bec" modifiers="35c"/>
         <layout first="10" last="10" mapSet="bec" modifiers="35c"/>
