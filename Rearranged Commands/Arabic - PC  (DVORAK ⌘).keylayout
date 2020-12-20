@@ -6,7 +6,36 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
     <!-- v 0.42 -->
    <!-- It currently is not exactly the way it should be for ISO keyboards, one key requires a change. We can fix this by adding another map set, but this will have to be done later. -->
     <layouts>
-        <layout first="0" last="0" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="1" last="6" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="10" last="10" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="12" last="12" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="14" last="15" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="17" last="17" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="24" last="28" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="31" last="31" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="34" last="34" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="37" last="37" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="40" last="40" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="195" last="195" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="198" last="198" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="202" last="202" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="204" last="204" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="1202" last="1202" mapSet="ANSI" modifiers="Modifiers"/>
+        <layout first="7" last="9" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="11" last="11" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="13" last="13" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="16" last="16" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="18" last="23" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="29" last="30" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="32" last="33" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="35" last="36" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="38" last="39" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="41" last="194" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="196" last="197" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="199" last="201" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="203" last="203" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="205" last="1201" mapSet="ISO" modifiers="Modifiers"/>
+        <layout first="1203" last="1300" mapSet="ISO" modifiers="Modifiers"/>
     </layouts>
     <modifierMap id="Modifiers" defaultIndex="7">
         <keyMapSelect mapIndex="0">
@@ -44,8 +73,38 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
         </keyMapSelect>
     </modifierMap>
     <keyMapSet id="ANSI">
+        <keyMap index="0" baseMapSet="ISO" baseIndex="0">
+            <!-- no modifier plane for ANSI keyboard -->
+            <!-- the only difference is the placement of DHAL -->
+            <key code="50" output="ذ"/>
+        </keyMap>
+        <keyMap index="1" baseMapSet="ISO" baseIndex="1">
+            <!-- Shift plane for ANSI keyboard -->
+            <!-- the only difference is the placement of Shaddah -->
+            <key code="50" output="ّ"/>
+        </keyMap>
+        <keyMap index="2" baseMapSet="ISO" baseIndex="2">
+            <!-- option plane for ANSI keyboard -->
+        </keyMap>
+        <keyMap index="3" baseMapSet="ISO" baseIndex="3">
+            <!-- shift option plane for ANSI keyboard -->
+        </keyMap>
+        <keyMap index="4" baseMapSet="ISO" baseIndex="4">
+            <!-- Caps lock plane for ANSI keyboard -->
+        </keyMap>
+        <keyMap index="5" baseMapSet="ISO" baseIndex="5">
+            <!-- A keymap for implementing Dvorak commands -->
+        </keyMap>
+        <keyMap index="6" baseMapSet="ISO" baseIndex="6">
+            <!-- A keymap for implementing Dvorak commands -->
+        </keyMap>
+        <keyMap index="7" baseMapSet="ISO" baseIndex="7">
+            <!-- A keymap for implementing Dvorak commands -->
+        </keyMap>
+    </keyMapSet>
+    <keyMapSet id="ISO">
         <keyMap index="0">
-            <!-- no modifier plane -->
+            <!-- No modifiers plane ISO keyboards -->
             <key code="0" output="ش"/>
             <key code="1" output="س"/>
             <key code="2" output="ي"/>
@@ -96,7 +155,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="47" output="ز"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
-            <key code="50" output="ذ"/>
+            <key code="50" output="٫"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
             <key code="53" output="&#x001B;"/>
@@ -155,7 +214,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="1">
-            <!-- Shift plane -->
+            <!-- Shift for ISO keyboards -->
             <key code="0" output="ِ"/>
             <key code="1" output="ٍ"/>
             <key code="2" output="]"/>
@@ -206,7 +265,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
-            <key code="50" output="ّ"/>
+            <key code="50" output="٬"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
             <key code="53" output="&#x001B;"/>
@@ -265,15 +324,12 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="2">
-            <!-- option plane -->
-            <key code="0" output=""/>
+            <!-- Option plane for ISO keyboards -->
             <key code="1" output="ے"/>
             <key code="2" output="ی"/>
             <key code="3" output="پ"/>
             <key code="4" output="ٰ"/>
             <key code="5" output="ٓ"/>
-            <key code="6" output=""/>
-            <key code="7" output=""/>
             <key code="8" output="ڈ"/>
             <key code="9" output="ڑ"/>
             <key code="10" output="&#x0003;"/>
@@ -282,7 +338,6 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="13" output="’"/>
             <key code="14" output="“"/>
             <key code="15" output="”"/>
-            <key code="16" output=""/>
             <key code="17" output="ڤ"/>
             <key code="18" output="ظ"/>
             <key code="19" output="ط"/>
@@ -290,33 +345,19 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="21" output="د"/>
             <key code="22" output="ٱ"/>
             <key code="23" output="∞"/>
-            <key code="24" output=""/>
-            <key code="25" output=""/>
-            <key code="26" output=""/>
             <key code="27" output="_"/>
-            <key code="28" output=""/>
             <key code="29" output="°"/>
-            <key code="30" output=""/>
-            <key code="31" output=""/>
             <key code="32" output="ە"/>
             <key code="33" output="چ"/>
-            <key code="34" output=""/>
-            <key code="35" output=""/>
             <key code="36" output="&#x000D;"/>
-            <key code="37" output=""/>
             <key code="38" output="ٹ"/>
             <key code="39" output="…"/>
             <key code="40" output="ں"/>
             <key code="41" output="گ"/>
-            <key code="42" output=""/>
             <key code="43" output=","/>
             <key code="44" output="÷"/>
-            <key code="45" output=""/>
-            <key code="46" output=""/>
-            <key code="47" output=""/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
-            <key code="50" output=""/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
             <key code="53" output="‏"/>
@@ -375,7 +416,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="3">
-            <!-- shift option plane -->
+            <!-- Option + Shift for ISO keyboards -->
             <key code="1" output="ے"/>
             <key code="2" output="ی"/>
             <key code="3" output="پ"/>
@@ -460,7 +501,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="4">
-            <!-- Caps lock plane -->
+            <!-- Caps Lock for ISO keyboards -->
             <key code="0" output="ش"/>
             <key code="1" output="س"/>
             <key code="2" output="ي"/>
@@ -570,6 +611,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="5">
+            <!-- A keymap for implementing Dvorak commands -->
             <key code="0" output="a"/>
             <key code="1" output="o"/>
             <key code="2" output="e"/>
@@ -674,6 +716,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="6">
+            <!-- A keymap for implementing Dvorak commands -->
             <key code="0" output="A"/>
             <key code="1" output="O"/>
             <key code="2" output="E"/>
@@ -778,6 +821,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="7">
+            <!-- A keymap for implementing Dvorak commands -->
             <key code="0" output=""/>
             <key code="36" output="&#x000D;"/>
             <key code="48" output="&#x0009;"/>
