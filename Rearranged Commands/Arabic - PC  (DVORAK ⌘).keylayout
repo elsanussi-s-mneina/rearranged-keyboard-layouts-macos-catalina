@@ -3,7 +3,7 @@
 <!--A keyboard layout that is exactly the same as Arabic PC (on Mac OS), but acts as DVORAK when entering commands with the command, control, and option keys. 
 This is intended to be useful for people who type Arabic well with the Arabic PC, but are otherwise used to using DVORAK on a daily basis to enter commands.-->
 <keyboard group="126" id="-23257" name="Arabic PC (Dvorak ⌘)">
-    <!-- v 0.42 -->
+    <!-- v 0.44 -->
    <!-- It currently is not exactly the way it should be for ISO keyboards, one key requires a change. We can fix this by adding another map set, but this will have to be done later. -->
     <layouts>
         <layout first="1" last="6" mapSet="ANSI" modifiers="Modifiers"/>
@@ -426,11 +426,13 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="11" output="ژ"/>
             <key code="15" output="؉"/>
             <key code="17" output="ڤ"/>
-            <key code="18" output="ظ"/>
-            <key code="19" output="ط"/>
+            <key code="18" output="&#x202A;"/> <!-- left to right embedding on the key that usually types 1 -->
+            <key code="19" output="&#x202B;"/> <!-- right to left embedding on the key that usually types 2 -->
             <key code="20" output="£"/>
             <key code="21" output="€"/>
+            <key code="26" output="&#x200F;"/> <!-- right-to-left mark on the key that usually types 7 -->
             <key code="27" output="_"/>
+            <key code="29" output="&#x202C;"/> <!-- Pop directional formatting on the key that usually types zero -->
             <key code="32" output="ە"/>
             <key code="33" output="چ"/>
             <key code="36" output="&#x000D;"/>
