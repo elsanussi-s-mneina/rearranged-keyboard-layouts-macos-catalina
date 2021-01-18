@@ -1,0 +1,4 @@
+2021-01-18
+Fix the Arabic PC (DVORAK) kind of keyboard layouts so that holding down the command key then pressing the = sign will send a command-plus which is necessary to be able to zoom in on a browser. 
+
+I honestly don't understand why the standard command layer differs from the normal non-command layer in this way, but it does. I should investigate if other commands also work, but I don't have a reasonable way to do it at the moment.

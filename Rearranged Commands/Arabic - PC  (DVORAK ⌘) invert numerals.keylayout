@@ -6,7 +6,7 @@
 This is intended to be useful for people who type Arabic well with the Arabic PC, but are otherwise used to using DVORAK on a daily basis to enter commands.-->
 <!-- The second difference is that it puts the Western numerals on the regular plane instead of requiring caps lock to be pressed to type 1234567890. To type: ١٢٣٤٥٦٧٨٩٠ you need to press caps lock first.-->
 <keyboard group="126" id="-23259" name="Arabic PC (Dvorak ⌘) invert numerals">
-    <!-- v 0.44 -->
+    <!-- v 0.45 -->
    <!-- It currently is not exactly the way it should be for ISO keyboards, one key requires a change. We can fix this by adding another map set, but this will have to be done later. -->
     <layouts>
         <layout first="1" last="6" mapSet="ANSI" modifiers="Modifiers"/>
@@ -646,7 +646,7 @@ This is intended to be useful for people who type Arabic well with the Arabic PC
             <key code="27" output="["/>
             <key code="28" output="8"/>
             <key code="29" output="0"/>
-            <key code="30" output="="/>
+            <key code="30" output="+"/>
             <key code="31" output="r"/>
             <key code="32" output="g"/>
             <key code="33" output="/"/>
