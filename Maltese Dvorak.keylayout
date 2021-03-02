@@ -92,7 +92,7 @@
             <key code="39" output="-"/>
             <key code="40" action="81"/>
             <key code="41" action="78"/>
-            <key code="42" output=""/>
+            <key code="42" output="\"/>
             <key code="43" action="86"/>
             <key code="44" action="89"/>
             <key code="45" action="43"/>

@@ -94,7 +94,7 @@
             <key code="39" action="89"/>
             <key code="40" action="33"/>
             <key code="41" action="53"/>
-            <key code="42" output=""/>
+            <key code="42" output="\"/>
             <key code="43" output=","/>
             <key code="44" output="/"/>
             <key code="45" action="45"/>
