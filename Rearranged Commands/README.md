@@ -1,3 +1,6 @@
+Note about this folder:
+Only put keyboard layouts whose only difference from an original keyboard layout is that their commands layer is in Dvorak instead of the usual QWERTY.
+
 As of version v0.44 of Arabic PC (DVORAK command) layout, these are the new changes.
 
 To switch text direction: 
